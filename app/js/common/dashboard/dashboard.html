@@ -1,11 +1,12 @@
 
 <!-- Show All Version -->
-
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 background" ng-show="!filtered" ng-repeat="media in allMedia track by $index">
-	<div class="hovereffect" ui-sref="singleItemState({mediaId: media.imdb.id})">
-		<img class="img-responsive" src="{{media.poster}}">
-		<div class="overlay">
-			<h2>{{media.title}}</h2>
-			<a class="info">IMDB Rating: {{media.imdb.rating}}</a>
-		</div>
-	</div>
+<div class="background">
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-show="!filtered" ng-repeat="media in allMedia track by $index">
+    <div class="hovereffect" ui-sref="singleItemState({mediaId: media.imdb.id})">
+      <img class="img-responsive" src="{{media.poster}}">
+      <div class="overlay">
+        <h2>{{media.title}}</h2>
+        <a class="info">IMDB Rating: {{media.imdb.rating}}</a>
+      </div>
+    </div>
+</div>
