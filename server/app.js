@@ -20,7 +20,7 @@ expApp.use('/recently_added', require('./routes/recently_added'))
 expApp.use('/movies', require('./routes/movies'))
 expApp.use('/shows', require('./routes/shows'))
 expApp.use('/catalog', require('./routes/catalog'))
-
+expApp.use('/hostname', require('./routes/hostname'))
 
 expApp.use(function(err, req, res, next) {
   console.log(err);
